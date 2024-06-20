@@ -1,0 +1,57 @@
+.navbar{
+    display: flex;
+    margin:10px 10px 10px 10px;
+    height: 10vh;
+    padding:5px;
+    width: 100%;
+    border:1px solid green;
+    background-color: bisque;
+    border: none;
+    position: fixed; /* Make navbar fixed */
+    top: 0; /* Stick to the top */
+    z-index: 1000;
+    margin: 0; /* Remove margin to prevent shifting when fixed */
+    padding: 5px;
+    
+}
+.navbar>div:nth-child(3){
+    display: flex;
+    cursor: pointer;
+    margin-right:20px;
+    gap:10px;
+}
+.navbar>div:nth-child(3) span:hover{
+    display: flex;
+    cursor: pointer;
+    color: blue;
+}
+.nav-instructor{
+    margin:20px 20px 20px 20px;
+    padding : 10px;
+    justify-content: center;
+    /* border: 1px solid green; */
+}
+
+/* media query part */
+@media screen and (max-width: 900px) {
+
+
+    .navbar{
+        display: block;
+        /* margin:10px 10px 10px 10px; */
+        /* height: 10vh; */
+        /* padding:5px; */
+        /* width: 100%; */
+        /* border:1px solid green; */
+        /* background-color: bisque; */
+        /* border: none; */
+        
+    }
+    .navbar>div:nth-child(3){
+        display: flex;
+        cursor: pointer;
+        /* margin-right:5px; */
+    }
+}
+
+
